@@ -48,7 +48,7 @@ const Applications: React.FC = () => {
                 className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer"
               >
                 <img 
-                  src={`/${image}`} 
+                  src={image} 
                   alt={`SLA Printed Product ${idx + 1}`} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"

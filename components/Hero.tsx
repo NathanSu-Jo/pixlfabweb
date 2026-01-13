@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
           <div className="mt-16 lg:mt-0 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-200 aspect-[4/3]">
               <img 
-                src="/bgpic1.png" 
+                src="bgpic1.png" 
                 alt="3D Printing Production" 
                 className="w-full h-full object-cover mix-blend-multiply opacity-80"
               />
