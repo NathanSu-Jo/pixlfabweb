@@ -38,24 +38,24 @@ const Applications: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              "SLA-clear resin-caps.jpg",
-              "SLA-clear resin-dolpin.jpg",
-              "SLA-clear resin-horses.jpg",
-              "SLS-TPU-lattice.jpg"
+              { src: "SLA-clear resin-caps.jpg", alt: "SLA Clear Resin Printed Caps" },
+              { src: "SLA-clear resin-dolpin.jpg", alt: "SLA Clear Resin Printed Dolphin" },
+              { src: "SLA-clear resin-horses.jpg", alt: "SLA Clear Resin Printed Horses" },
+              { src: "SLS-TPU-lattice.jpg", alt: "SLS TPU Lattice Structure" }
             ].map((image, idx) => (
               <div 
                 key={idx} 
                 className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer"
               >
                 <img 
-                  src={image} 
-                  alt={`SLA Printed Product ${idx + 1}`} 
+                  src={image.src} 
+                  alt={image.alt} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 p-4">
-                    <p className="font-medium text-sm">{image.replace(/-/g, ' ').replace('.jpg', '')}</p>
+                    <p className="font-medium text-sm">{image.src.replace(/-/g, ' ').replace('.jpg', '')}</p>
                   </div>
                 </div>
               </div>
