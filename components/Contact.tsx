@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="font-bold text-slate-900">Phone / WhatsApp</p>
-                  <p className="text-slate-500">+86 19526211914</p>
+                  <p className="text-slate-500">+86 13120585188</p>
                 </div>
               </div>
 
